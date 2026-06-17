@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<p>nova entrada</p>
+<form method="post">
+{% csrf_token %}
+{{ form.as_p }}
+<button class="button is-primary"></button>
+</form>
+{% endblock %}

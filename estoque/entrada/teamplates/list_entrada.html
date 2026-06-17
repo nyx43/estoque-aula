@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block product %}
+<p>Entrada</p>
+<a class="button is-primary" href="{% url 'entrada:new_entrada' 
+%}">Novo</a>
+<table class="table">
+ <thead>
+    <tr>
+        <th>Id</th>
+        <th>Produto</th>
+        <th>Preço</th>
+        <th>Quantidade</th>
+        <th></th>
+    </tr>
+</thead>
